@@ -3,94 +3,187 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>গুইমারা বাণিজ্যালয়</title>
+<title>গুইমারা বাণিজ্যালয় | খাঁটি মসলা ও কৃষিপণ্য</title>
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
+*{box-sizing:border-box;margin:0;padding:0}
 body{
-background:#f5f5f5;
-color:#222;
+  font-family:Arial,"Noto Sans Bengali",sans-serif;
+  background:#f5f7f5;
+  color:#222;
+  line-height:1.7;
 }
-
 header{
-background:#0b6b2d;
-color:white;
-padding:20px;
-text-align:center;
+  background:#0b6b2d;
+  color:white;
+  padding:25px 15px;
+  text-align:center;
 }
-
-header h1{
-font-size:36px;
-}
-
-header p{
-margin-top:10px;
-}
+header h1{font-size:32px}
+header p{font-size:16px}
 
 .hero{
-padding:30px;
-text-align:center;
-background:white;
+  text-align:center;
+  background:white;
+  padding:45px 20px;
 }
-
-.hero img{
-width:100%;
-max-width:900px;
-border-radius:12px;
-}
-
 .hero h2{
-margin:20px 0;
-font-size:34px;
-color:#0b6b2d;
+  color:#0b6b2d;
+  font-size:30px;
+  margin-bottom:12px;
 }
-
 .hero p{
-font-size:18px;
-line-height:30px;
+  max-width:700px;
+  margin:auto;
+  font-size:18px;
 }
 
-.btn{
-display:inline-block;
-margin:10px;
-padding:14px 25px;
-border-radius:8px;
-text-decoration:none;
-color:white;
-font-weight:bold;
+.products{
+  max-width:1100px;
+  margin:auto;
+  padding:35px 15px;
 }
-
-.call{
-background:#ff9800;
+.products h2{
+  text-align:center;
+  color:#0b6b2d;
+  margin-bottom:25px;
+  font-size:28px;
 }
-
-.whatsapp{
-background:#25D366;
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
 }
-
-section{
-max-width:1100px;
-margin:auto;
-padding:20px;
-}
-
 .card{
-background:white;
-padding:20px;
-margin-top:20px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,.1);
+  background:white;
+  padding:25px;
+  text-align:center;
+  border-radius:15px;
+  box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+.card h3{
+  color:#0b6b2d;
+  font-size:22px;
+  margin-bottom:8px;
+}
 
-<h2>আমাদের পণ্যের আসল ছবি</h2>
+.about{
+  background:#eaf5ed;
+  padding:40px 20px;
+  text-align:center;
+}
+.about h2{
+  color:#0b6b2d;
+  margin-bottom:15px;
+}
+.about p{
+  max-width:850px;
+  margin:auto;
+  font-size:17px;
+}
 
-<img src="IMG_20260802_082301.jpg" width="300"><br><br>
+.contact{
+  text-align:center;
+  padding:40px 20px;
+  background:white;
+}
+.contact h2{
+  color:#0b6b2d;
+  margin-bottom:20px;
+}
+.btn{
+  display:inline-block;
+  padding:13px 22px;
+  margin:7px;
+  border-radius:8px;
+  text-decoration:none;
+  color:white;
+  font-weight:bold;
+}
+.whatsapp{background:#25D366}
+.call{background:#ff9800}
 
-<img src="IMG_20260802_082320.jpg" width="300"><br><br>
+footer{
+  background:#0b6b2d;
+  color:white;
+  text-align:center;
+  padding:20px;
+  font-size:14px;
+}
+</style>
+</head>
 
-<img src="IMG_20260802_082342.jpg" width="300">
+<body>
+
+<header>
+  <h1>গুইমারা বাণিজ্যালয়</h1>
+  <p>খাঁটি মসলা ও কৃষিপণ্যের বিশ্বস্ত সরবরাহকারী</p>
+</header>
+
+<section class="hero">
+  <h2>পাহাড়ের খাঁটি কৃষিপণ্য</h2>
+  <p>
+    গুইমারা ও পার্বত্য এলাকার কৃষকদের কাছ থেকে সংগ্রহ করা
+    মানসম্মত আদা, হলুদ, তেঁতুল, তেজপাতা ও বিভিন্ন মসলা।
+  </p>
+</section>
+
+<section class="products">
+  <h2>আমাদের পণ্য</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>🫚 আদা</h3>
+      <p>মানসম্মত পাহাড়ি আদা সরবরাহ করা হয়।</p>
+    </div>
+
+    <div class="card">
+      <h3>🌿 হলুদ</h3>
+      <p>খাঁটি কাঁচা ও শুকনা হলুদ পাওয়া যায়।</p>
+    </div>
+
+    <div class="card">
+      <h3>🌱 তেঁতুল</h3>
+      <p>বাছাই করা মানসম্মত তেঁতুল।</p>
+    </div>
+
+    <div class="card">
+      <h3>🍃 তেজপাতা</h3>
+      <p>সুন্দর মানের শুকনা তেজপাতা।</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="about">
+  <h2>আমাদের সম্পর্কে</h2>
+  <p>
+    গুইমারা বাণিজ্যালয় পার্বত্য এলাকার কৃষকদের কাছ থেকে
+    কৃষিপণ্য সংগ্রহ করে দেশের বিভিন্ন স্থানে পাইকারি ব্যবসায়ী,
+    কোম্পানি প্রতিনিধি ও ক্রেতাদের কাছে সরবরাহ করে।
+    সততা, মানসম্মত পণ্য ও সময়মতো সরবরাহ আমাদের প্রধান লক্ষ্য।
+  </p>
+</section>
+
+<section class="contact">
+  <h2>যোগাযোগ করুন</h2>
+
+  <a class="btn whatsapp"
+     href="https://wa.me/8801618853505"
+     target="_blank">
+     WhatsApp করুন
+  </a>
+
+  <a class="btn call"
+     href="tel:01618853505">
+     📞 কল করুন
+  </a>
+</section>
+
+<footer>
+  © 2026 গুইমারা বাণিজ্যালয় — সর্বস্বত্ব সংরক্ষিত
+</footer>
+
+</body>
+</html>
