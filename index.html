@@ -3,112 +3,214 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>গুইমারা বাণিজ্যালয় | খাঁটি মসলা ও কৃষিপণ্য</title>
+
+<title>গুইমারা বাণিজ্যালয় | খাঁটি আদা, হলুদ ও মসলা</title>
+
+<meta name="description" content="গুইমারা বাণিজ্যালয় — গুইমারা, খাগড়াছড়ি থেকে মানসম্মত আদা, হলুদ, তেঁতুল ও তেজপাতা সরবরাহ।">
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
 body{
   font-family:Arial,"Noto Sans Bengali",sans-serif;
-  background:#f5f7f5;
+  background:#f7f9f7;
   color:#222;
   line-height:1.7;
 }
+
 header{
-  background:#0b6b2d;
+  background:#075e2b;
   color:white;
-  padding:25px 15px;
+  padding:18px 15px;
   text-align:center;
+  position:sticky;
+  top:0;
+  z-index:1000;
 }
-header h1{font-size:32px}
-header p{font-size:16px}
+
+header h1{
+  font-size:28px;
+  margin-bottom:5px;
+}
+
+header p{
+  font-size:14px;
+}
+
+nav{
+  margin-top:12px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 8px;
+  font-size:14px;
+}
 
 .hero{
+  background:linear-gradient(rgba(0,70,30,.75),rgba(0,70,30,.75)),
+  url("https://images.unsplash.com/photo-1615485500704-8e990f9900f7?auto=format&fit=crop&w=1400&q=80");
+  background-size:cover;
+  background-position:center;
+  color:white;
   text-align:center;
-  background:white;
-  padding:45px 20px;
+  padding:85px 20px;
 }
+
 .hero h2{
-  color:#0b6b2d;
-  font-size:30px;
-  margin-bottom:12px;
+  font-size:34px;
+  margin-bottom:15px;
 }
+
 .hero p{
   max-width:700px;
   margin:auto;
-  font-size:18px;
+  font-size:17px;
+}
+
+.button{
+  display:inline-block;
+  margin-top:25px;
+  padding:12px 25px;
+  background:#f5c400;
+  color:#222;
+  text-decoration:none;
+  border-radius:30px;
+  font-weight:bold;
+}
+
+section{
+  padding:50px 20px;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+}
+
+.section-title{
+  text-align:center;
+  color:#075e2b;
+  font-size:28px;
+  margin-bottom:30px;
 }
 
 .products{
-  max-width:1100px;
-  margin:auto;
-  padding:35px 15px;
-}
-.products h2{
-  text-align:center;
-  color:#0b6b2d;
-  margin-bottom:25px;
-  font-size:28px;
-}
-.grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:20px;
 }
+
 .card{
   background:white;
-  padding:25px;
-  text-align:center;
   border-radius:15px;
+  padding:25px 20px;
+  text-align:center;
   box-shadow:0 4px 15px rgba(0,0,0,.08);
 }
+
+.card .icon{
+  font-size:55px;
+  margin-bottom:10px;
+}
+
 .card h3{
-  color:#0b6b2d;
+  color:#075e2b;
   font-size:22px;
   margin-bottom:8px;
 }
 
 .about{
-  background:#eaf5ed;
-  padding:40px 20px;
+  background:#eaf5ee;
   text-align:center;
 }
-.about h2{
-  color:#0b6b2d;
-  margin-bottom:15px;
-}
+
 .about p{
   max-width:850px;
   margin:auto;
-  font-size:17px;
+  font-size:16px;
+}
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  margin-top:30px;
+}
+
+.feature{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  text-align:center;
+}
+
+.feature h3{
+  color:#075e2b;
+  margin-bottom:5px;
 }
 
 .contact{
   text-align:center;
-  padding:40px 20px;
+}
+
+.contact-box{
   background:white;
+  max-width:650px;
+  margin:auto;
+  padding:30px;
+  border-radius:15px;
+  box-shadow:0 4px 15px rgba(0,0,0,.08);
 }
-.contact h2{
-  color:#0b6b2d;
-  margin-bottom:20px;
-}
-.btn{
-  display:inline-block;
-  padding:13px 22px;
-  margin:7px;
-  border-radius:8px;
-  text-decoration:none;
+
+.whatsapp{
+  background:#25d366;
   color:white;
+  display:inline-block;
+  padding:13px 25px;
+  margin-top:15px;
+  border-radius:30px;
+  text-decoration:none;
   font-weight:bold;
 }
-.whatsapp{background:#25D366}
-.call{background:#ff9800}
 
 footer{
-  background:#0b6b2d;
+  background:#073d20;
   color:white;
   text-align:center;
-  padding:20px;
+  padding:25px 15px;
+}
+
+footer p{
   font-size:14px;
+}
+
+@media(max-width:600px){
+  header h1{
+    font-size:23px;
+  }
+
+  nav a{
+    margin:0 4px;
+    font-size:12px;
+  }
+
+  .hero{
+    padding:65px 15px;
+  }
+
+  .hero h2{
+    font-size:27px;
+  }
+
+  section{
+    padding:40px 15px;
+  }
 }
 </style>
 </head>
@@ -117,72 +219,132 @@ footer{
 
 <header>
   <h1>গুইমারা বাণিজ্যালয়</h1>
-  <p>খাঁটি মসলা ও কৃষিপণ্যের বিশ্বস্ত সরবরাহকারী</p>
+  <p>খাঁটি আদা • হলুদ • তেঁতুল • তেজপাতা</p>
+
+  <nav>
+    <a href="#home">হোম</a>
+    <a href="#products">পণ্য</a>
+    <a href="#about">আমাদের সম্পর্কে</a>
+    <a href="#contact">যোগাযোগ</a>
+  </nav>
 </header>
 
-<section class="hero">
-  <h2>পাহাড়ের খাঁটি কৃষিপণ্য</h2>
+<section class="hero" id="home">
+  <h2>পাহাড়ের খাঁটি পণ্য</h2>
+
   <p>
-    গুইমারা ও পার্বত্য এলাকার কৃষকদের কাছ থেকে সংগ্রহ করা
-    মানসম্মত আদা, হলুদ, তেঁতুল, তেজপাতা ও বিভিন্ন মসলা।
+    গুইমারা, খাগড়াছড়ি থেকে সরাসরি সংগ্রহ করা
+    মানসম্মত আদা, হলুদ ও বিভিন্ন মসলা
+    পাইকারি ক্রেতা ও ব্যবসায়ীদের জন্য সরবরাহ।
   </p>
+
+  <a href="#products" class="button">আমাদের পণ্য দেখুন</a>
 </section>
 
-<section class="products">
-  <h2>আমাদের পণ্য</h2>
+<section id="products">
+  <div class="container">
 
-  <div class="grid">
+    <h2 class="section-title">আমাদের পণ্য</h2>
 
-    <div class="card">
-      <h3>🫚 আদা</h3>
-      <p>মানসম্মত পাহাড়ি আদা সরবরাহ করা হয়।</p>
+    <div class="products">
+
+      <div class="card">
+        <div class="icon">🫚</div>
+        <h3>আদা</h3>
+        <p>পাহাড়ি অঞ্চলের মানসম্মত তাজা ও শুকনা আদা।</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🌿</div>
+        <h3>হলুদ</h3>
+        <p>গুইমারা অঞ্চলের ভালো মানের কাঁচা ও শুকনা হলুদ।</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🟤</div>
+        <h3>তেঁতুল</h3>
+        <p>মানসম্মত পাহাড়ি তেঁতুল পাইকারি সরবরাহ।</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🍃</div>
+        <h3>তেজপাতা</h3>
+        <p>বাছাই করা মানসম্মত তেজপাতা সরবরাহ।</p>
+      </div>
+
     </div>
+  </div>
+</section>
 
-    <div class="card">
-      <h3>🌿 হলুদ</h3>
-      <p>খাঁটি কাঁচা ও শুকনা হলুদ পাওয়া যায়।</p>
-    </div>
+<section class="about" id="about">
+  <div class="container">
 
-    <div class="card">
-      <h3>🌱 তেঁতুল</h3>
-      <p>বাছাই করা মানসম্মত তেঁতুল।</p>
-    </div>
+    <h2 class="section-title">আমাদের সম্পর্কে</h2>
 
-    <div class="card">
-      <h3>🍃 তেজপাতা</h3>
-      <p>সুন্দর মানের শুকনা তেজপাতা।</p>
+    <p>
+      গুইমারা বাণিজ্যালয় গুইমারা, খাগড়াছড়ি ভিত্তিক একটি
+      কৃষিপণ্য ও মসলা সরবরাহকারী প্রতিষ্ঠান।
+      আমরা পাহাড়ি কৃষকদের কাছ থেকে আদা, হলুদ, তেঁতুল,
+      তেজপাতা ও অন্যান্য কৃষিপণ্য সংগ্রহ করে
+      পাইকারি ব্যবসায়ী, কোম্পানি প্রতিনিধি ও ক্রেতাদের
+      কাছে সরবরাহ করার লক্ষ্য নিয়ে কাজ করছি।
+    </p>
+
+    <div class="features">
+
+      <div class="feature">
+        <h3>✓ মানসম্মত পণ্য</h3>
+        <p>পণ্য বাছাই করে সরবরাহ।</p>
+      </div>
+
+      <div class="feature">
+        <h3>✓ ন্যায্য মূল্য</h3>
+        <p>ব্যবসায়িকভাবে প্রতিযোগিতামূলক মূল্য।</p>
+      </div>
+
+      <div class="feature">
+        <h3>✓ সরাসরি সংগ্রহ</h3>
+        <p>পাহাড়ি কৃষকদের কাছ থেকে সংগ্রহ।</p>
+      </div>
+
+      <div class="feature">
+        <h3>✓ সময়মতো সরবরাহ</h3>
+        <p>ক্রেতার চাহিদা অনুযায়ী সরবরাহের চেষ্টা।</p>
+      </div>
+
     </div>
 
   </div>
 </section>
 
-<section class="about">
-  <h2>আমাদের সম্পর্কে</h2>
-  <p>
-    গুইমারা বাণিজ্যালয় পার্বত্য এলাকার কৃষকদের কাছ থেকে
-    কৃষিপণ্য সংগ্রহ করে দেশের বিভিন্ন স্থানে পাইকারি ব্যবসায়ী,
-    কোম্পানি প্রতিনিধি ও ক্রেতাদের কাছে সরবরাহ করে।
-    সততা, মানসম্মত পণ্য ও সময়মতো সরবরাহ আমাদের প্রধান লক্ষ্য।
-  </p>
-</section>
+<section class="contact" id="contact">
+  <div class="container">
 
-<section class="contact">
-  <h2>যোগাযোগ করুন</h2>
+    <h2 class="section-title">যোগাযোগ করুন</h2>
 
-  <a class="btn whatsapp"
-     href="https://wa.me/8801618853505"
-     target="_blank">
-     WhatsApp করুন
-  </a>
+    <div class="contact-box">
 
-  <a class="btn call"
-     href="tel:01618853505">
-     📞 কল করুন
-  </a>
+      <h3>গুইমারা বাণিজ্যালয়</h3>
+
+      <p>📍 গুইমারা, খাগড়াছড়ি, বাংলাদেশ</p>
+
+      <p>📞 মোবাইল: 01618853505</p>
+
+      <a
+        class="whatsapp"
+        href="https://wa.me/8801618853505"
+        target="_blank">
+        WhatsApp এ যোগাযোগ করুন
+      </a>
+
+    </div>
+
+  </div>
 </section>
 
 <footer>
-  © 2026 গুইমারা বাণিজ্যালয় — সর্বস্বত্ব সংরক্ষিত
+  <p>© 2026 গুইমারা বাণিজ্যালয় — সর্বস্বত্ব সংরক্ষিত</p>
+  <p>আদা • হলুদ • তেঁতুল • তেজপাতা</p>
 </footer>
 
 </body>
